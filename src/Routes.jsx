@@ -1,4 +1,5 @@
 import App from './components/App';
+import AuthorPrompt from './components/AuthorPrompt';
 import LandingPage from './components/LandingPage';
 import Login from './components/Login';
 import Signup from './components/Signup';
@@ -8,9 +9,10 @@ const routes = [
   {
     path: '/',
     element: <App />,
-    children: [
-
-    ]
+  },
+  {
+    path: '/author-prompt',
+    element: <AuthorPrompt />,
   },
   {
     path: '/landing-page',
@@ -21,5 +23,6 @@ const routes = [
     ]
   },
 ];
+
 
 export default routes;
