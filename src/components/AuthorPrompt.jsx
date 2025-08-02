@@ -11,7 +11,7 @@ export default function AuthorPrompt () {
 
     // If user isn't logged in or is logged in and an author, navigate to appropriate page
     if (!user) return <Navigate to='/landing-page' replace />;
-    if (user.isAuthor) return <Navigate to="/" replace />;
+    if (user.isAuthor) return <Navigate to="/home" replace />;
 
     function handleLogout() {
         // Remove token from local storage

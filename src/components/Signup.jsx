@@ -24,7 +24,7 @@ export default function Signup() {
         if (res.ok) {
             localStorage.setItem('token', data.token);
             setUser(data.user);
-            navigate('/');
+            navigate('/home');
         } 
         else alert(data.message || 'Sign up failed');
     }

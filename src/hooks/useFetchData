@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-export default function useFetchData(url) {
+function useFetchData(url) {
   const [data, setData] = useState(null); // State to store the fetched data
   const [loading, setLoading] = useState(true); // State to track if the fetch is still in progress
   const [error, setError] = useState(null); // State to hold any error that occurs during the fetch
@@ -43,3 +43,5 @@ export default function useFetchData(url) {
   // Return the data that was fetched, along with the loading and error status
   return { data, loading, error };
 }
+
+export default useFetchData;

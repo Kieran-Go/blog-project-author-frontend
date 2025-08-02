@@ -23,7 +23,7 @@ export default function Login() {
         if(res.ok) {
             localStorage.setItem('token', data.token);
             setUser(data.user);
-            navigate('/');
+            navigate('/home');
         }
         else alert(data.message || 'Login failed');
     }
